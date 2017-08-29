@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shipping Address (Form Assignment)</title>
+</head>
+<style>
+* {
+    margin: 5px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+}
+
+div input {
+    display: inline;
+}
+</style>
+
+<body>
+    <h2>Shipping Address Form</h2>
+    <form>
+        First Name:
+        <input type="text" name="first_name"> Last Name:
+        <input type="text" name="last_name">
+        <div>
+            Address Type:
+            <input type="radio" name="address_type" value="home"> Home
+            <input type="radio" name="address_type" value="office"> Office
+        </div>
+        Address1:
+        <input type="text" name="address1"> Address2:
+        <input type="text" name="address2"> Address3:
+        <input type="text" name="address3"> State:
+        <select>
+            <option value="AL">Alaska</option>
+            <option value="CA">California</option>
+            <option value="AZ">Arizona</option>
+            <option value="CO">Colorado</option>
+        </select>
+        City:
+        <input type="text" name="city"> Special Instructions:
+        <textarea cols="50" rows="5"></textarea>
+        <div>
+            Special Services:
+            <ul>
+                <li>
+                    <input type="checkbox" name="secure_packing">Secure Packing</li>
+                <li>
+                    <input type="checkbox" name="in_person_delivery">In Person Delivery</li>
+                <li>
+                    <input type="checkbox" name="express_delivery">Express Delivery</li>
+            </ul>
+        </div>
+        <div>
+            <input type="submit" name="" value="Save">
+            <input type="button" name="" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

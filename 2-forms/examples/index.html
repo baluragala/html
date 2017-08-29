@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements</title>
+    <style>
+    input,
+    textarea {
+        display: block;
+        margin: 10px;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="http://www.fincher.org/SimpleFormAction.pl" method="get">
+        First Name:
+        <input type="text" name="FirstName" value="" size="15" maxlength="15" /> Last Name:
+        <input type="text" name="LastName" value="Smith" size="20" maxlength="20" /> About Me:
+        <textarea cols="40" name="comments" rows="6">please enter your comments...
+        </textarea>
+        Password:
+        <input type="password" value="" name="mypassword" maxlength="10" size="10" />
+        <fieldset>
+            <legend>Select a Hero</legend>
+            <input type="radio" name="hero" value="Agamemnon" onclick="displayHero(this)" /> Agamemnon
+            <input type="radio" name="hero" value="Achilles" onclick="displayHero(this)" /> Achilles
+            <input type="radio" name="hero" value="Hector" onclick="displayHero(this)" /> Hector
+        </fieldset>
+        <input type="checkbox" name="accept" />I accept terms and conditions
+        <input type="checkbox" name="updates" checked="checked" />I would like to receive periodic updates
+        <br/> Select Country:
+        <select name="countries">
+            <option>Argentina</option>
+            <option>Albania</option>
+            <option>Afganistain</option>
+            <option selected="selected">Aruba</option>
+        </select>
+        <br/>
+        <br/> Select Menu:
+        <select name="menuitems">
+            <optgroup id="opt1" label="food">
+                <option>Hamburgers</option>
+                <option>Hotdogs</option>
+            </optgroup>
+            <optgroup id="opt2" label="drinks">
+                <option>Coke</option>
+                <option>Pepsi</option>
+                <option>Water</option>
+            </optgroup>
+        </select>
+        <br/>
+        <br/> Select Your Computer Brand
+        <select name="computerbrands" multiple="multiple">
+            <option value="DELL" selected="selected">DELL</option>
+            <option value="IBM">IBM</option>
+            <option value="HP">HP</option>
+            <option value="Compaq">Compaq</option>
+            <option value="Sony">Sony</option>
+        </select>
+        <input type="hidden" name="computerType" value="DELL" />
+        <input type="hidden" name="computerOS" value="WIN2K" />
+        <input type="reset" name="submitbutton" value="cancel" />
+        <input type="submit" name="submitbutton" value="submit" />
+    </form>
+</body>
+
+</html>

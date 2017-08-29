@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Event (HTML 5)</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend class="legend">Create Event</legend>
+            <div>
+                <label for="name">Name*</label>
+                <br>
+                <input type="text" placeholder="Event Name" autofocus required="">
+            </div>
+            <br/>
+            <div>
+                <label for="name">Event Manager Email*</label>
+                <br>
+                <input type="email" placeholder="Event Manager Email"  required="">
+            </div>
+            <br/>
+            <div>
+                <label for="color">Indicator Flag</label>
+                <br>
+                <input type="color" placeholder="Indicator Flag color">
+            </div>
+            <br/>
+            <div>
+                <label for="event_date">Date of Event*</label>
+                <br>
+                <input type="date" id="event_date" max="2017-12-31" min="2017-08-29"  required="">
+            </div>
+            <br/>
+            <div>
+                <label for="event_time">Time of Event*</label>
+                <br>
+                <input type="time" id="event_time" max="18:00" min="09:00"  required="">
+            </div>
+            <br/>
+            <div>
+                <label for="event_price">Price*</label>
+                <br>
+                <input type="number" id="event_price" max="1500" min="1500"  required="">
+            </div>
+            <br/>
+            <div>
+                <label for="event_category">Category</label>
+                <br>
+                <select>
+                    <option value="NONE"></option>
+                    <option value="SC">Standup comedy</option>
+                    <option value="MA">Magician</option>
+                    <option value="MU">Musical</option>
+                    <option value="EX">Exhibiton</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="event_approved_level">Approved Level: </label>
+                <br/>
+                <span>1</span>
+                <input type="range" name="event_approved_level" min="1" max="10">
+                <span>10</span>
+            </div>
+            <br/>
+            <div>
+                <label for="event_location">Location: *</label>
+                <input type="text" placeholder="location" list="locations"  required="">
+                <br>
+                <datalist id="locations">
+                    <option>Kramer Events</option>
+                    <option>SF Event Venues</option>
+                    <option>Alexandria Ballrooms</option>
+                    <option>Grand long beach</option>
+                    <option>Impact Hub Oakland</option>
+                </datalist>
+            </div>
+            <br/>
+            <div>
+                <label for="contact">Phone Numbers*</label>
+                <br>
+                <input type="tel" placeholder="Phone1"  required="">
+                <input type="tel" placeholder="Phone2">
+            </div>
+            <br/>
+            <input type="submit" value="Create" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
